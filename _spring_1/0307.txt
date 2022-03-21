@@ -1,0 +1,11 @@
+<<spring
+ - 자바 기반의 웹 개발 프레임워크
+ - 2003년 Rod Johnson이 발표
+ - 프레임워크(framework) : 프로그램을 작성할 때 벼때가 되는 골격
+ 
+1. 빌드(builder) : 자바 소스를 실행할 수 있는 독립적인 형태로 변환하는 과정
+  test.java -> test.class -> test 실행
+ 이러한 빌더를 도와주는 도구를 build 도구라고 하는데,
+ 많은 도구 중에서 가장 사용이 많은 것은 maven, gradle이다
+
+ spring.io : 스프링 공식 사이트

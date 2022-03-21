@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<!-- <bean id = "data1" class = "kr.hs.study.DataBean1"></bean>
+	<bean id = "data2" class = "kr.hs.study.DataBean1"></bean>
+	<bean id = "data3" class = "kr.hs.study.DataBean1"></bean>                   
+	<bean id = "t1" class="kr.hs.study.TestBean1">
+		<property name = "data1" ref = "data1"></property>
+		<property name = "data2" ref = "data2"></property>
+		<property name = "data3" ref = "data3"></property>
+	</bean> -->
+	<!-- <bean id = "data2" class = "kr.hs.study.DataBean2"></bean>
+	<bean id = "t2" class = "kr.hs.study.TestBean2" autowire = "byType">
+		<property name = "data3" ref="data2"></property>
+		<property name = "data4" ref="data2"></property>
+	</bean> -->
+	
+	<bean id = "data3" class = "kr.hs.study.DataBean3"></bean>
+	<bean id = "t3" class = "kr.hs.study.TestBean3" autowire = "constructor">
+		
+	</bean>
+</beans>

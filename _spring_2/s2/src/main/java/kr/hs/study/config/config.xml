@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	                    http://www.springframework.org/schema/beans/spring-beans.xsd
+	                    http://www.springframework.org/schema/context
+	                    http://www.springframework.org/schema/context/spring-context.xsd
+	                    http://www.springframework.org/schema/aop
+	                    http://www.springframework.org/schema/aop/spring-aop.xsd">
+	<beans>
+		<bean class = "kr.hs.study.DataBean" id = "data1"></bean>
+		<bean id ="t1" class = "kr.hs.study.beans.TestBean">
+			<constructor-arg value = "11" type = "int" ></constructor-arg>
+			<constructor-arg value = "11.11" type = "double" ></constructor-arg>
+			<constructor-arg value = "Wacom" type = "String" ></constructor-arg>
+			<constructor-arg  ref = "data1" index = "3">
+			</constructor-arg>
+			<constructor-arg ref = "data1" index = "4">
+			</constructor-arg>
+		</bean>
+		
+		<bean class = "kr.hs.study.DataBean2" id = "data2"></bean>
+		<bean class  = "kr.hs.study.beans.TestBean2" id = "t2">
+			<constructor-arg value ="11" type = "int"></constructor-arg> 
+			<constructor-arg value ="11.11" type = "double"></constructor-arg> 
+			<property name = "data3" ref = "data2"></property>
+			<property name = "data4" ref = "data2"></property>
+		</bean>
+	</beans>
+</beans>

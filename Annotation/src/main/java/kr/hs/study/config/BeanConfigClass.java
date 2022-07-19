@@ -8,8 +8,6 @@ import kr.hs.study.beans.DataBean1;
 import kr.hs.study.beans.DataBean2;
 import kr.hs.study.beans.TestBean1;
 
-
-
 @Configuration
 public class BeanConfigClass {
 	@Bean
